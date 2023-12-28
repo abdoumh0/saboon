@@ -18,10 +18,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className}relative h-[100vh] bg-gray-800 transition-colors duration-300`}
+        className={`${inter.className}relative h-[100dvh] bg-gray-950 transition-colors duration-300`}
       >
         <Navbar />
-        <div className="h-[80%] border-[1px] border-gray-700 mx-10 px-14">
+        <div className="h-[80%] border-[1px] overflow-scroll border-gray-900 mx-10 px-14 text-gray-300">
           {children}
         </div>
         <Footer />

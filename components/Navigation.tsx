@@ -15,7 +15,7 @@ export default function Navigation({}: Props) {
         <li key={key}>
           <button
             onClick={() => router.push("/" + path.toLowerCase())}
-            className={`hover:text-[#a82fd0] hover:bg-gray-700 px-3 py-2 rounded transition-colors duration-300 ${
+            className={`hover:text-[#a82fd0] hover:bg-gray-700 active:underline underline-offset-8 px-3 py-2 rounded transition-color duration-300 ${
               path.toLowerCase() == gpath.slice(0, gpath.indexOf("/"))
                 ? "bg-[#2fd0a8] text-[#a82fd0]"
                 : ""

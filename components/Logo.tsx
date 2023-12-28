@@ -1,7 +1,21 @@
-import React from "react";
+"use client";
+import Link from "next/link";
+import React, { useState, useEffect } from "react";
 
 type Props = {};
-
 export default function Logo({}: Props) {
-  return <h1 className="text-4xl">Abdou Meh</h1>;
+  const [cursor, setCursor] = useState<boolean>(true);
+  useEffect(() => {
+    const t = setTimeout(() => {
+      setCursor(!cursor);
+    }, 530);
+    return () => clearTimeout(t);
+  }, [cursor]);
+
+  return (
+    <Link href="/" className="flex text-4xl select-none hover:cursor-pointer">
+      <p>Saboon</p>
+      {cursor && <p>_</p>}
+    </Link>
+  );
 }
