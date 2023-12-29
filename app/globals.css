@@ -2,8 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+.navigation:focus {
+  outline: none;
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity));
+}
+
+:root {
+  --color-primary: #2fd0a8;
+  --color-secondary: #aa37d09e;
+  --color-tertiary: #aa38d07b;
+  --color-quaternary: #b45ed142;
+  --color-quinary: #bc73d41c;
+
+  --color-1: #3d8dae;
+  --color-2: #df8453;
+  --color-3: #dd54a6;
+  --color-4: #cbd466;
+}
+
 .fadein {
-  animation: fadeInAnimation ease 500ms;
+  animation: fadeInAnimation ease 530ms;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -14,5 +33,117 @@
   }
   100% {
     opacity: 1;
+  }
+}
+.text-shadows {
+  text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
+    9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+  font-family: bungee, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: calc(2rem + 5vw);
+  text-align: center;
+  margin: 0;
+  color: var(--color-primary);
+  background-color: var(--color-primary);
+  color: transparent;
+  background-clip: text;
+  animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+  letter-spacing: 0.4rem;
+}
+
+@keyframes shadows {
+  0% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+  15% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary);
+  }
+  30% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+  40% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  50% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  60% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+      12px 12px 0 var(--color-quinary);
+  }
+  70% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+  }
+  85% {
+    text-shadow: 3px 3px 0 var(--color-secondary),
+      6px 6px 0 var(--color-tertiary);
+  }
+
+  100% {
+    text-shadow: 3px 3px 0 var(--color-secondary);
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  40% {
+    transform: translate(-12px, -12px);
+  }
+  50% {
+    transform: translate(-12px, -12px);
+  }
+  60% {
+    transform: translate(-12px, -12px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+
+.color-change {
+  animation: color-animation 4.24s linear infinite;
+}
+
+@keyframes color-animation {
+  0% {
+    color: var(--color-1);
+  }
+  12% {
+    color: var(--color-1);
+  }
+  24% {
+    color: var(--color-1);
+  }
+  25% {
+    color: var(--color-2);
+  }
+  49% {
+    color: var(--color-2);
+  }
+  50% {
+    color: var(--color-3);
+  }
+  74% {
+    color: var(--color-3);
+  }
+  75% {
+    color: var(--color-4);
+  }
+  99% {
+    color: var(--color-4);
+  }
+  100% {
+    color: var(--color-1);
   }
 }

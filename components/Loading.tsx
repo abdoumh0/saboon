@@ -5,7 +5,7 @@ import { Silkscreen_Regular } from "@/fonts";
 type Props = {};
 
 export default function Loading({}: Props) {
-  const [dots, setDots] = useState("...");
+  const [dots, setDots] = useState("···");
   useEffect(() => {
     const t = setTimeout(() => {
       setDots((prev) => {
@@ -20,7 +20,7 @@ export default function Loading({}: Props) {
   }, [dots]);
   return (
     <div
-      className={`${Silkscreen_Regular.className} flex select-none text-8xl items-center justify-center h-[100%] w-[100%] fadein mx-auto my-auto`}
+      className={`${Silkscreen_Regular.className} flex select-none text-8xl items-center justify-center h-[100%] w-[100%] mx-auto my-auto`}
     >
       {dots}
     </div>

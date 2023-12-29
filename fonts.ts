@@ -4,9 +4,17 @@ import {
   Lobster_Two,
   Cairo,
   Roboto_Mono,
+  VT323,
 } from "next/font/google";
 
 import localFont from "next/font/local";
+
+export const VT323_400 = VT323({
+  weight: "400",
+  display: "swap",
+  subsets: ["latin"],
+  preload: true,
+});
 
 export const Silkscreen_Regular = localFont({
   src: [{ path: "./public/fonts/Silkscreen/Silkscreen-Regular.ttf" }],

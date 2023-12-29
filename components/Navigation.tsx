@@ -10,7 +10,7 @@ export default function Navigation({}: Props) {
   const routes = ["Work", "About", "Skills", "Contact"];
 
   return (
-    <ul className="hidden md:flex justify-between space-x-5">
+    <ul className="hidden md:flex justify-between space-x-5 navigation">
       {routes.map((path, key) => (
         <li key={key}>
           <button

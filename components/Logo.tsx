@@ -13,7 +13,10 @@ export default function Logo({}: Props) {
   }, [cursor]);
 
   return (
-    <Link href="/" className="flex text-4xl select-none hover:cursor-pointer">
+    <Link
+      href="/"
+      className="flex text-4xl select-none hover:cursor-pointer rounded"
+    >
       <p>Saboon</p>
       {cursor && <p>_</p>}
     </Link>
