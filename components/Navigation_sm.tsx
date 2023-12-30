@@ -10,7 +10,7 @@ export default function Navigation({}: Props) {
   const routes = ["Work", "About", "Skills", "Contact"];
 
   return (
-    <ul className="flex justify-between space-x-1 navigation fadein">
+    <ul className="flex text-sm justify-between space-x-1 navigation fadein nv-sm">
       {routes.map((path, key) => (
         <li key={key}>
           <button

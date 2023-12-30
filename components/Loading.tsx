@@ -20,7 +20,7 @@ export default function Loading({}: Props) {
   }, [dots]);
   return (
     <div
-      className={`${Silkscreen_Regular.className} flex select-none text-8xl items-center justify-center h-[100%] w-[100%] mx-auto my-auto`}
+      className={`${Silkscreen_Regular.className} flex text-[#a82fd0] select-none text-8xl items-center justify-center h-[100%] w-[100%] mx-auto my-auto`}
     >
       {dots}
     </div>
