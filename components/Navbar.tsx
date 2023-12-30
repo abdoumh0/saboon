@@ -34,7 +34,7 @@ export default function Navbar({}: Props) {
 
   return (
     <div
-      className={`${Silkscreen_Regular.className} flex navbar bg-gray-950 justify-between md:px-14 px-4 py-3 mb-8 items-center align-middle text-[#2fd0a8] border-b-[2px] border-b-[#a82fd0] min-h-10 md:min-h-14`}
+      className={`${Silkscreen_Regular.className} flex navbar bg-gray-950 justify-between md:px-14 px-4 py-3 mb-4 items-center align-middle text-[#2fd0a8] border-b-[2px] border-b-[#a82fd0] min-h-10 md:min-h-14`}
     >
       {!burgerOpen && <Logo burgerOpen={burgerShouldOpen} />}
       {burgerOpen && <Navigation_sm />}

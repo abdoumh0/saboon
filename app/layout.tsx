@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className}relative h-[100dvh] bg-gray-950`}>
         <Navbar />
-        <main className="main grid overflow-scroll mx-10 px-10 text-gray-300">
+        <main className="main grid overflow-scroll mx-10 px-4 text-gray-300">
           <div className="flex justify-center items-center text-gray-300 mx-auto fadein">
             {children}
           </div>
