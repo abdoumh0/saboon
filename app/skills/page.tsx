@@ -13,7 +13,7 @@ export default function page({}: Props) {
       >
         These are self estimates, however I tried to be most objective
       </h2>
-      <div className="grid gap-y-4 max-h-64 my-8 overflow-scroll">
+      <div className="grid gap-y-4 max-h-80 my-8 overflow-scroll">
         <Progress label="C" percentage={65} />
         <Progress label="HTML" percentage={80} />
         <Progress label="CSS" percentage={80} />
