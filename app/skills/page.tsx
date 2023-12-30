@@ -1,4 +1,3 @@
-import { VT323_400 } from "@/fonts";
 import React from "react";
 
 type Props = {};

@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import Navigation_sm from "./Navigation_sm";
 
 type Props = {
   burgerOpen: boolean;
@@ -10,7 +9,6 @@ type Props = {
 export default function Burger({ burgerOpen, setBurgerOpen }: Props) {
   return (
     <>
-      {burgerOpen && <Navigation_sm />}
       <button
         onClick={(e) => {
           setBurgerOpen(!burgerOpen);

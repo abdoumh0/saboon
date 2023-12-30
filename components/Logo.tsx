@@ -33,6 +33,8 @@ export default function Logo({ burgerOpen }: Props) {
       }
     }, 42);
 
+    console.log("inside logo usef");
+
     return () => clearTimeout(t);
   }, [logoText, burgerOpen]);
 

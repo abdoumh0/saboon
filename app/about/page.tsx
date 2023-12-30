@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  Silkscreen_Regular,
-  Cairo_400,
-  Roboto_Mono_400,
-  VT323_400,
-} from "@/fonts";
+import { Silkscreen_Regular, VT323 } from "@/fonts";
 
 type Props = {};
 
@@ -17,7 +12,7 @@ export default function page({}: Props) {
         >
           Hello, World!
         </h1>
-        <h2 className={`${VT323_400.className}  mx-4 my-6 text-2xl`}>
+        <h2 className={`${VT323.className}  mx-4 my-6 text-2xl`}>
           &emsp;My name is Abderrahim, or{" "}
           <span
             className={`${Silkscreen_Regular.className} text-lg color-change`}
