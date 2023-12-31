@@ -5,10 +5,8 @@ type Props = {};
 
 export default function page({}: Props) {
   return (
-    <div className="text-center">
-      <h1
-        className={`${Silkscreen_Regular.className} stroke-black stroke-2 text-8xl text-shadows`}
-      >
+    <div className="text-center text-gray-300">
+      <h1 className={`${Silkscreen_Regular.className} text-8xl text-shadows`}>
         Hello, World!
       </h1>
       <h2 className={`${VT323.className}  mx-4 my-6 text-2xl tracking-wider`}>
