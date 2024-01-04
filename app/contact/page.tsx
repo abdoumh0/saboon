@@ -7,9 +7,7 @@ type Props = {};
 
 export default function page({}: Props) {
   return (
-    <div
-      className={`${VT323.className} grid text-3xl gap-y-24 text-gray-500 transition-all duration-300`}
-    >
+    <div className={`${VT323.className} grid text-3xl gap-y-24 text-gray-500`}>
       <div className="w-fit mx-auto">
         Email me
         <Link
@@ -24,11 +22,11 @@ export default function page({}: Props) {
             xmlns="http://www.w3.org/2000/svg"
             id="memory-email"
           >
-            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
             <g
               id="SVGRepo_tracerCarrier"
-              stroke-linecap="round"
-              stroke-linejoin="round"
+              strokeLinecap="round"
+              strokeLinejoin="round"
             ></g>
             <g id="SVGRepo_iconCarrier">
               <path d="M1 5H2V4H20V5H21V18H20V19H2V18H1V5M3 17H19V9H18V10H16V11H14V12H12V13H10V12H8V11H6V10H4V9H3V17M19 6H3V7H5V8H7V9H9V10H13V9H15V8H17V7H19V6Z"></path>

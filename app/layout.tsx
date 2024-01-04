@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import "./globals.css";
+import Providers from "./providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,7 +22,7 @@ export default function RootLayout({
         <Navbar />
         <main className="main grid overflow-scroll mx-10 px-4 text-gray-300">
           <div className="flex justify-center items-center text-gray-300 mx-auto fadein">
-            {children}
+            <Providers>{children}</Providers>
           </div>
         </main>
         <Footer />

@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
+import { useRouter } from "next13-progressbar";
 
 type Props = {};
 
@@ -10,7 +11,7 @@ export default function Navigation({}: Props) {
   const routes = ["Work", "About", "Skills", "Contact"];
 
   return (
-    <ul className="hidden md:flex justify-between space-x-5 navigation fadein">
+    <ul className="hidden md:flex justify-between space-x-5 navigation fadein nav-sm">
       {routes.map((path, key) => (
         <li key={key}>
           <button

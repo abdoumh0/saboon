@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
+import { useRouter } from "next13-progressbar";
 
 type Props = {};
 
