@@ -6,15 +6,15 @@ type Props = {};
 
 export default function Socials({}: Props) {
   return (
-    <div className="flex gap-x-4 w-[100%] transition-all duration-300">
+    <div className="flex gap-x-4 w-[100%]">
       <Link
-        className="p-2"
+        className="p-2 group"
         href="https://www.facebook.com/abdoumh0"
         target="_blank"
         rel="noopener noreferrer"
       >
         <svg
-          className="hover:translate-y-[-6px] transition-all duration-300 fill-gray-500 hover:fill-blue-500 w-[28px]"
+          className="group-hover:translate-y-[-6px] group-focus:translate-y-[-6px] transition-all duration-150 fill-gray-500 group-hover:fill-blue-500 group-focus:fill-blue-500 w-[28px]"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -34,13 +34,13 @@ export default function Socials({}: Props) {
         </svg>
       </Link>
       <Link
-        className="p-2"
+        className="p-2 group"
         href="https://www.github.com/abdoumh0"
         target="_blank"
         rel="noopener norefrrer"
       >
         <svg
-          className="hover:translate-y-[-6px] transition-all duration-300 fill-gray-500 hover:fill-gray-700  w-[28px]"
+          className="group-hover:translate-y-[-6px] group-focus:translate-y-[-6px] transition-all duration-150 fill-gray-500 group-hover:fill-gray-700 group-focus:fill-gray-700 w-[28px]"
           viewBox="0 0 32 32"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -56,13 +56,13 @@ export default function Socials({}: Props) {
         </svg>
       </Link>
       <Link
-        className="p-2"
+        className="p-2 group"
         href="https://www.discordapp.com/users/519963503155740712"
         target="_blank"
         rel="noopener noreferrer"
       >
         <svg
-          className="fill-gray-500 w-[32px] hover:fill-[#7289da] hover:translate-y-[-6px]"
+          className="fill-gray-500 w-[34px] group-hover:fill-[#7289da] group-hover:translate-y-[-6px] group-focus:fill-[#7289da] group-focus:translate-y-[-6px] transition-all duration-150"
           viewBox="0 0 24 24"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -78,13 +78,13 @@ export default function Socials({}: Props) {
         </svg>
       </Link>
       <Link
-        className="p-2"
+        className="p-2 group"
         href="https://t.me/abdoumh0"
         target="_blank"
         rel="noopener noreferrer"
       >
         <svg
-          className="fill-gray-500 hover:fill-[#40B3E0] hover:animate-bounce w-[28px]"
+          className="fill-gray-500 group-focus:fill-[#40B3E0] group-focus:translate-y-[-6px] group-hover:fill-[#40B3E0] group-hover:translate-y-[-6px] transition-all duration-150 w-[28px]"
           viewBox="0 0 256 256"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
@@ -101,14 +101,16 @@ export default function Socials({}: Props) {
             <g>
               <path d="M128,0 C57.307,0 0,57.307 0,128 L0,128 C0,198.693 57.307,256 128,256 L128,256 C198.693,256 256,198.693 256,128 L256,128 C256,57.307 198.693,0 128,0 L128,0 Z"></path>
               <path
+                className="fill-gray-950 group-hover:fill-white"
                 d="M190.2826,73.6308 L167.4206,188.8978 C167.4206,188.8978 164.2236,196.8918 155.4306,193.0548 L102.6726,152.6068 L83.4886,143.3348 L51.1946,132.4628 C51.1946,132.4628 46.2386,130.7048 45.7586,126.8678 C45.2796,123.0308 51.3546,120.9528 51.3546,120.9528 L179.7306,70.5928 C179.7306,70.5928 190.2826,65.9568 190.2826,73.6308"
-                fill="#FFFFFF"
               ></path>
               <path
+                className="fill-[#212426] group-hover:fill-[#D2E5F1]"
                 d="M98.6178,187.6035 C98.6178,187.6035 97.0778,187.4595 95.1588,181.3835 C93.2408,175.3085 83.4888,143.3345 83.4888,143.3345 L161.0258,94.0945 C161.0258,94.0945 165.5028,91.3765 165.3428,94.0945 C165.3428,94.0945 166.1418,94.5735 163.7438,96.8115 C161.3458,99.0505 102.8328,151.6475 102.8328,151.6475"
                 fill="#D2E5F1"
               ></path>
               <path
+                className="fill-[#2a3136] group-hover:fill-[#b5cfe4]"
                 d="M122.9015,168.1154 L102.0335,187.1414 C102.0335,187.1414 100.4025,188.3794 98.6175,187.6034 L102.6135,152.2624"
                 fill="#B5CFE4"
               ></path>

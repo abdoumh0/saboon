@@ -8,16 +8,16 @@ type Props = {};
 export default function page({}: Props) {
   return (
     <div className={`${VT323.className} grid text-3xl gap-y-24 text-gray-500`}>
-      <div className="w-fit mx-auto">
+      <div className="w-fit mx-auto focus-within:text-[#a82fd0] hover:text-[#a82fd0] transition-all duration-75">
         Email me
         <Link
-          className="flex justify-center"
+          className="flex justify-center group"
           href="mailto:abdoumeh421@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
         >
           <svg
-            className="fill-gray-500 hover:fill-red-700 w-[48px] hover:animate-bounce transition-all duration-300"
+            className="fill-gray-500 group-focus:fill-red-700 group-focus:animate-bounce group-hover:fill-red-700 w-[48px] group-hover:animate-bounce"
             viewBox="0 0 22 22"
             xmlns="http://www.w3.org/2000/svg"
             id="memory-email"
@@ -34,7 +34,7 @@ export default function page({}: Props) {
           </svg>
         </Link>
       </div>
-      <div className="mx-auto w-fit">
+      <div className="mx-auto w-fit focus-within:text-[#2fd0a8] hover:text-[#2fd0a8] transition-all duration-75">
         <div className="mx-auto w-fit">or find me here</div>
         <div className="w-fit mx-auto">
           <Socials />
