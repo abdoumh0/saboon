@@ -23,7 +23,7 @@ export default function page({}: Props) {
       className={`${Silkscreen_Regular.className} text-gray-600 text-5xl grid gap-y-4`}
     >
       <div className="mx-auto w-fit">[{dots}]</div>
-      <div className="">Coming soon</div>
+      <div className="text-center">Coming soon</div>
     </div>
   );
 }
