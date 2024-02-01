@@ -21,7 +21,7 @@ export default function RootLayout({
       <body className={`${inter.className}relative h-[100dvh] bg-gray-950`}>
         <Navbar />
         <main className="main grid overflow-scroll mx-10 px-4 text-gray-300">
-          <div className="flex justify-center items-center text-gray-300 mx-auto fadein">
+          <div className="flex justify-center items-center text-gray-300  fadein">
             <Providers>{children}</Providers>
           </div>
         </main>

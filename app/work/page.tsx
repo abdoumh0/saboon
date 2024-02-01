@@ -1,29 +1,26 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { Silkscreen_Regular } from "@/fonts";
+import works from "./work.json";
+import { VT323 } from "@/fonts";
+import ProjectEntry from "@/components/ProjectEntry";
 
 type Props = {};
 
+type Work = {
+  title: string;
+  description: string;
+  link: string;
+};
+
 export default function page({}: Props) {
   const [dots, setDots] = useState("···");
-  useEffect(() => {
-    const t = setTimeout(() => {
-      setDots((prev) => {
-        if (prev.length < 3) {
-          return prev + "·";
-        } else {
-          return "";
-        }
-      });
-    }, 530);
-    return () => clearTimeout(t);
-  }, [dots]);
+  const [work, setWord] = useState<Work[]>(works);
+
   return (
-    <div
-      className={`${Silkscreen_Regular.className} text-gray-600 text-5xl grid gap-y-4`}
-    >
-      <div className="mx-auto w-fit">[{dots}]</div>
-      <div className="text-center">Coming soon</div>
+    <div className={`${VT323.className} text-left w-full`}>
+      {work.toReversed().map((v, k) => {
+        return <ProjectEntry key={k} {...v} />;
+      })}
     </div>
   );
 }
