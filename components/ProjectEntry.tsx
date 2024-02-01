@@ -19,6 +19,9 @@ export default function ProjectEntry({ description, link, title }: Props) {
       }}
     >
       <Link
+        onClick={(e) => {
+          e.stopPropagation();
+        }}
         ref={linkRef}
         href={link}
         target="_blank"
