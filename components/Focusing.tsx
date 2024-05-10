@@ -11,7 +11,20 @@ export default function Focusing({}: Props) {
       <div
         className={`${Silkscreen_Regular.className} flex gap-x-4 italic justify-center items-center`}
       >
-        Currently pursuing:
+        Currently learning:
+        <Link
+          href="https://www.rust-lang.org/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            color="blue"
+            src="/rust.svg"
+            width={48}
+            height={48}
+            alt="rust logo"
+          />
+        </Link>
         <Link href="https://go.dev/" target="_blank" rel="noopener noreferrer">
           <Image
             color="blue"
@@ -26,20 +39,7 @@ export default function Focusing({}: Props) {
       <div
         className={`${Silkscreen_Regular.className} flex gap-x-4 italic justify-center items-center`}
       >
-        Future Goals:
-        <Link
-          href="https://www.rust-lang.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            color="blue"
-            src="/rust.svg"
-            width={48}
-            height={48}
-            alt="rust logo"
-          />
-        </Link>
+        {/* Other Interests:
         <Link
           href="https://www.opengl.org/"
           target="_blank"
@@ -52,7 +52,7 @@ export default function Focusing({}: Props) {
             height={46}
             alt="opengl logo"
           />
-        </Link>
+        </Link> */}
       </div>
     </div>
   );

@@ -21,7 +21,9 @@ export default function page({}: Props) {
         <Progress label="Typescript" percentage={60} />
         <Progress label="ReactJS" percentage={70} />
         <Progress label="NextJS" percentage={60} />
-        <Progress label="OpenGL" percentage={20} />
+        <Progress label="OpenGL" percentage={50} />
+        <Progress label="Golang" percentage={40} />
+        <Progress label="Rust" percentage={25} />
       </div>
 
       <Focusing />

@@ -8,7 +8,7 @@ type Props = {};
 export default function Navigation({}: Props) {
   const router = useRouter();
   const gpath = usePathname().slice(1) + "/";
-  const routes = ["Work", "About", "Skills", "Contact"];
+  const routes = ["Code", "About", "Skills", "Contact"];
 
   return (
     <ul className="flex text-sm justify-between space-x-1 navigation fadein nv-sm">

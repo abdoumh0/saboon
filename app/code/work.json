@@ -3,5 +3,10 @@
     "title": "Wordle clone",
     "description": "my attempt at recreating the game \"Wordle\"",
     "link": "https://wordle-sand-theta.vercel.app/"
+  },
+  {
+    "title": "C Fluid Simulator",
+    "description": "A fluid sim written in C and OpenGL",
+    "link": "https://github.com/abdoumh0/c-fluid"
   }
 ]
