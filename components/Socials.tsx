@@ -57,7 +57,7 @@ export default function Socials({}: Props) {
       </Link>
       <Link
         className="p-2 group"
-        href="https://www.discordapp.com/users/519963503155740712"
+        href="https://www.discordapp.com/users/297301594083688448"
         target="_blank"
         rel="noopener noreferrer"
       >
